@@ -29,7 +29,7 @@ bot.dialog('/', [
     },
     function (session, results) {
         session.userData.coding = results.response;
-        builder.Prompts.choice(session, "What language do you code Node using?", ["JavaScript", "Java", "TypeScript"]);
+        builder.Prompts.choice(session, "What language do you prefer?", ["JavaScript", "Java", "TypeScript"]);
     },
     function (session, results) {
         session.userData.language = results.response.entity;
